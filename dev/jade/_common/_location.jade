@@ -1,0 +1,38 @@
+.location
+  .container
+    .location__content
+      .location__address.address(itemscope='', itemtype='http://schema.org/Organization')
+        .address__item.address__item--street.address-item(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+          p.address-item__head Чекаємо вас за адресою:
+          p.address-item__text.address-item__text--bold(itemprop='streetAddress') м. Київ, вул. Верхній Вал 2А
+        .address__item.address__item--street.address-item
+          p.address-item__head Графік роботи музею:
+          p.address-item__text 
+           | пн-вихідний
+           br
+           | вт-пт: 09:30 - 19:00
+           br 
+           | сб-нд, свята: 10:00 - 20:00
+        .address__item.address__item--contacts.address-item
+          p.address-item__head Контакти
+          .address-item__text
+            a(href="tel:+38 (044) 425-65-81").address-item__telephone(itemprop='telephone')
+              | +38 (044) 425-65-81, 
+            a(href="tel:+38 (096) 477-97-91").address-item__telephone(itemprop='telephone')
+              | +38 (096) 477-97-91, 
+            a(href="tel:+38 (099) 256-71-27").address-item__telephone(itemprop='telephone')
+              | +38 (099) 256-71-27
+          p.address-item__text.address-item__text--email(itemprop='email') enjoy@experimentanium.com.ua
+      .location__media.media-content
+        .media-content__shops
+          a.media-content__coffee.media-content__item(href="#")
+            i.media-content__coffee-pic.media-content__item-pic.icon-coffee-icon
+            .media-content__coffee-text.media-content__item-text кафетерій
+          a.media-content__shop.media-content__item(href="#")
+            i.media-content__shop-pic.media-content__item-pic.icon-shop-icon
+            .media-content__shop-text.media-content__item-text магазин
+        .media-content__info
+          .media-content__map.media-content__item
+          a.media-content__science.media-content__item(href="#")
+            i.media-content__science-pic.media-content__item-pic.icon-science-icon
+            .media-content__science-text.media-content__item-text Освітній портал

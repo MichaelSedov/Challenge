@@ -1,0 +1,52 @@
+header.header
+  .container
+    .row
+      .header__activities
+        .header__search
+          form.header__search-form.search-form(action='', method='GET')
+            button.search-form__button.js-search
+              i.icon-search-icon.search-form__icon
+            input.search-form__input(type='search', name='s', placeholder='Тесла шоу корпоратив')
+        .header__language
+          ul.header__language-list.language-select
+            li.language-select__item.active(data-lang='ua') укр
+            li.language-select__item(data-lang='ru') рус
+            li.language-select__item(data-lang='en') eng
+                
+    .row
+      .header__top
+        a.header__logo.logo(href="#")
+          .logo__pic
+          .logo__description
+            .logo__description-head Експериментаніум
+            .logo__description-text Музей популярної науки і техніки
+            
+        .header__menu.header-menu
+           ul.header-menu__list
+             li.header-menu__item
+               a.header-menu__link(href="#") Головна
+             li.header-menu__item
+               a.header-menu__link(href="#") Експозиция и шоу
+               ul.header-menu__item-list
+                 li.header-menu__item.header-menu__item--dropdown
+                   a.header-menu__link.header-menu__link--dropdown(href="#") Шоу в музее
+                 li.header-menu__item.header-menu__item--dropdown
+                   a.header-menu__link.header-menu__link--dropdown(href="#") Подии и лекции
+                 li.header-menu__item.header-menu__item--dropdown
+                   a.header-menu__link.header-menu__link--dropdown(href="#") Выездные шоу
+                 li.header-menu__item.header-menu__item--dropdown
+                   a.header-menu__link.header-menu__link--dropdown(href="#") 3d ТУР
+             li.header-menu__item
+               a.header-menu__link(href="#") Новини
+             li.header-menu__item
+               a.header-menu__link(href="#") Освитни програми
+             li.header-menu__item
+               a.header-menu__link(href="#") Организация свят
+             li.header-menu__item
+               a.header-menu__link(href="#") Про нас
+             span.header-menu__mobile-close
+           .header-menu__mobile
+             span.header-menu__mobile-icon
+           a.header-menu__tickets.btn.btn--purple-transparent(href="#") Квитки
+               
+            

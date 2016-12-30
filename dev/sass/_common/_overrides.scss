@@ -1,0 +1,162 @@
+@import "./sprite";
+//Owl slider
+.info-slider.owl-carousel {
+  .owl-dots {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .owl-dot {
+    @include inlineblock(middle);
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    &.active {
+      background-color: #46196f;
+    }
+  }
+}
+
+.news-slider {
+  .owl-nav {
+    position: absolute;
+    bottom: 94px;
+    width: 100%;
+  }
+  .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #60068d;
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon';
+      transform: rotate(-90deg);
+      font-size: 4.625rem;
+      @include inlineblock(middle);
+    }
+    &.disabled {
+      color: #d3d3d3;
+    }
+  }
+  .owl-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #60068d;
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon';
+      transform: rotate(90deg);
+      font-size: 4.625rem;
+      @include inlineblock(middle);
+    }
+    &.disabled {
+      color: #d3d3d3;
+    }
+  }
+}
+
+.body-mobile {
+  .owl-nav {
+    z-index: 0 !important;
+  }
+}
+
+.main__slider {
+  .owl-stage-outer {
+    height: 100%;
+    z-index: 1;
+  }
+  .owl-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 35vh;
+    width: 1220px;
+    z-index: 3;
+  }
+  .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #60068d;
+    z-index: 1;
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon';
+      transform: rotate(-90deg);
+      font-size: 4.625rem;
+      @include inlineblock(middle);
+    }
+    &.disabled {
+      color: #d3d3d3;
+    }
+  }
+  .owl-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #60068d;
+    z-index: 1;
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon';
+      transform: rotate(90deg);
+      font-size: 4.625rem;
+      @include inlineblock(middle);
+    }
+    &.disabled {
+      color: #d3d3d3;
+    }
+  }
+  .owl-stage {
+    height: 100%;
+  }
+  .owl-item {
+    height: 100%;
+  }
+
+}
+
+.lectures-list {
+  .owl-nav {
+    position: absolute;
+    bottom: 94px;
+    width: 100%;
+  }
+  .owl-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #60068d;
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon';
+      transform: rotate(-90deg);
+      font-size: 4.625rem;
+      @include inlineblock(middle);
+    }
+    &.disabled {
+      color: #d3d3d3;
+    }
+  }
+  .owl-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #60068d;
+    &:after {
+      content: "\e902";
+      font-family: 'icomoon';
+      transform: rotate(90deg);
+      font-size: 4.625rem;
+      @include inlineblock(middle);
+    }
+    &.disabled {
+      color: #d3d3d3;
+    }
+  }
+}

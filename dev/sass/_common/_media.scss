@@ -1,0 +1,372 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1270px) {
+  .container {
+    width: 960px;
+  }
+
+  .main {
+    height: 100%;
+    min-height: 100vh;
+    &__slider-title {
+      max-width: 80%;
+    }
+    &__slider {
+      position: relative;
+    }
+  }
+
+  .header-menu {
+    flex-direction: row-reverse;
+
+    &__list {
+      position: absolute;
+      width: 0;
+      height: 0;
+      padding: 0;
+      opacity: 0;
+      display: none;
+    	//transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    	//transform: scale(0);
+      &.mobile {
+        opacity: 1;
+        display: block;
+        //transform: scale(1);
+      }
+    }
+    &__link {
+      background: transparent;
+    }
+    &__mobile {
+      margin-left: 30px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+
+  .main__slider {
+    .owl-nav {
+      width: 930px;
+    }
+  }
+
+  .index-content {
+    top: 50px;
+    //position: static;
+  }
+
+  .info-item-slider {
+    &__head,
+    &__text {
+      max-width: 95%;
+    }
+  }
+
+  .lectures-item {
+    &__pic {
+      max-width: 40%;
+    }
+    &__info {
+      width: 80%;
+    }
+    &__img {
+      width: 20%;
+    }
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .container {
+    width: 736px;
+  }
+
+  .main {
+    &__slider-title {
+      max-width: 90%;
+      max-height: 7rem;
+      overflow: hidden;
+      text-shadow: none;
+    }
+  }
+
+  .location {
+    &__content {
+      flex-direction: column;
+    }
+    &__address {
+      width: 100%;
+      min-height: 680px;
+    }
+    &__media {
+      width: 100%;
+      min-height: 680px;
+    }
+  }
+
+  .media-content {
+    &__shops {
+      flex: 1;
+    }
+    &__info {
+      flex: 2;
+    }
+  }
+
+  .main__slider {
+    .owl-nav {
+      width: 706px;
+    }
+  }
+
+  .lectures-item {
+    &__img {
+      display: none;
+    }
+    &__info {
+      width: 100%;
+    }
+    &__pic {
+      max-width: 46%;
+    }
+    &__buttons {
+      .btn {
+        padding: 16px 12px;
+      }
+    }
+  }
+
+  .footer {
+    &__categories {
+      width: 50%;
+    }
+    &__contacts {
+      width: 50%;
+    }
+  }
+
+  .footer-categories {
+    &__row {
+      display: block;
+    }
+    &__column {
+      width: 49%;
+      margin-bottom: 30px;
+    }
+  }
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    padding: 0 15px;
+    &.scroll {
+      padding: 10px 15px;
+    }
+  }
+
+  .main__slider {
+    .owl-nav {
+      width: calc(100% - 30px);
+    }
+  }
+
+  .lectures {
+    &:before {
+      content: none;
+    }
+    &__list {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .lectures-item {
+    &__info {
+      flex-direction: column;
+    }
+    &__pic {
+      max-width: 100%;
+      margin: 0 0 30px 0;
+      flex-basis: auto;
+    }
+    &__description {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width : 640px) {
+  .main {
+    min-height: 600px;
+  }
+
+  .main__slider-content {
+    top: 30%;
+  }
+
+  .main__slider {
+    .owl-nav {
+      bottom: 100px;
+      top: auto;
+    }
+  }
+
+  .color-box {
+    &--info {
+      width: 100%;
+      margin: 10px 0;
+    }
+    &--transparent {
+      display: none;
+    }
+  }
+
+  .header {
+    .logo__description {
+      display: none;
+    }
+  }
+
+  .activities {
+    &:after {
+      content: none;
+    }
+    &__row {
+      flex-direction: column;
+      &--reverse {
+        flex-direction: column-reverse;
+      }
+    }
+    &__block {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    &__wrap {
+      flex-direction: column-reverse;
+    }
+    &__categories {
+      width: 100%;
+    }
+    &__contacts {
+      width: 100%;
+    }
+  }
+
+  .footer-categories {
+    &__column {
+      width: 24%;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .main {
+    &__slider-title {
+      max-width: 100%;
+      font-size: 1.5rem;
+      max-height: 7rem;
+      overflow: hidden;
+      text-shadow: none;
+    }
+    &__slider-date {
+      font-size: 1.125rem;
+      &-big {
+        font-size: 3rem;
+      }
+    }
+    &__slider-buttons {
+      .btn {
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .main__slider {
+    &-content {
+      top: 150px;
+    }
+  }
+
+  .header.scroll .logo__pic,
+  .header .logo__pic {
+    background-position: $logo-small-offset-x $logo-small-offset-y;
+    width: $logo-small-width;
+    height: $logo-small-height;
+  }
+
+  .header {
+    .logo__pic {
+      margin-right: 0;
+    }
+  }
+
+  .locatin__media {
+    min-height: auto;
+  }
+  .media-content {
+    &__shops,
+    &__info {
+      flex-direction: column;
+      height: auto;
+    }
+    &__item {
+      width: 100%;
+      min-height: 80vw;
+    }
+  }
+
+  .footer-categories {
+    &__column {
+      width: 49%;
+    }
+  }
+
+  .header {
+    &__activities {
+      margin: 20px 0 10px 0;
+    }
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}

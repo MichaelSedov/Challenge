@@ -1,0 +1,107 @@
+.info {
+  position: relative;
+  //width: 100%;
+}
+
+.color-box {
+  @include flex-center;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 1;
+  &--purple {
+    background: $accent-color;
+  }
+  &--green {
+    background: $accent-color-second;
+  }
+  &--orange {
+    background: $accent-color-third;
+  }
+  &--info {
+    min-height: 324px;
+    width: 50%;
+    float: left;
+  }
+  &--info-shadow {
+    box-shadow: 0 2px 49px rgba(27, 27, 30, 0.2);
+  }
+  &--activities {
+    min-height: 414px;
+    width: 50%;
+    float: left;
+  }
+  &--transparent {
+    z-index: 0;
+  }
+  &--shadow {
+    z-index: 0;
+    box-shadow: $common-shadow;
+  }
+  &--shadow-in {
+    box-shadow: -1.1px -31px 49px rgba(27, 27, 30, 0.2);
+  }
+}
+
+a.color-box {
+  @include transition(all 0.3s);
+  z-index: 5;
+  padding: 10px 10px;
+  &:hover {
+    transform: scale(1.02);
+    z-index: 6;
+  }
+}
+
+.info-item {
+  &__pic {
+    color: #fff;
+    @include inlineblock(middle);
+    &--voice {
+      font-size: 3.125rem;
+    }
+    &--3d {
+      font-size: 5rem;
+    }
+    &--tickets {
+      font-size: 3.625rem;
+    }
+  }
+  &__head {
+    margin-top: 22px;
+    color: #fff;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  &__text {
+    margin-top: 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.0625rem;
+  }
+}
+
+.info-item-slider {
+  margin-top: 34px;
+  color: #fff;
+  text-align: center;
+  &__head {
+    @include inlineblock(middle);
+    max-width: 60%;
+    margin-bottom: 15px;
+    font-size: 1.375rem;
+    line-height: 1.4;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+  &__text {
+    @include inlineblock(middle);
+    max-width: 70%;
+    color: #fefefe;
+    font-size: 1.125rem;
+    line-height: 1.33;
+  }
+}

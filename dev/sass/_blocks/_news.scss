@@ -1,0 +1,40 @@
+.news-slider {
+  &__item {
+    @include flex-center;
+    height: 422px;
+    text-align: center;
+    @include transition(all 0.3s);
+    &:hover .news-slider__hover {
+      opacity: 1;
+      @include transition(all 0.3s);
+    }
+  }
+  &__date {
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #7b4aa6;
+  }
+  &__text {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-style: italic;
+    color: #282b30;
+  }
+  &__hover {
+    @include flex-center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: url('../images/news-img.png') no-repeat center center;
+    background-size: cover;
+    background-color: rgb(221,137,45);
+    @include transition(all 0.3s);
+  }
+}

@@ -1,0 +1,112 @@
+.lecture
+  .container
+    .row
+      .lecture__breadcrumbs.breadcrumbs
+        a.breadcrumbs__prev(href="#")
+          i.icon-arrow-small
+        a.breadcrumbs__link(href="#") освітні програми
+        a.breadcrumbs__link(href="#") лекції
+        a.breadcrumbs__link.breadcrumbs__link--current(href="#") Дифузія
+    .row
+      .lecture__shows
+        .lecture__item.lecture-object
+          .lecture-object__left-column
+            .lecture-object__image-wrap
+              .lecture-object__pic(style="background-image:url(images/lecture-item.jpg)")
+              .lecture-object__info
+                .lecture-object__days.lecture-info
+                  .lecture-info__head Коли:
+                  .lecture-info__text ВТ, СР, ЧТ
+                  .lecture-info__text 12:00, 16:00
+                .lecture-object__duration.lecture-info
+                  .lecture-info__head Тривалисть:
+                  .lecture-info__text 120 хв
+                .lecture-object__price.lecture-info
+                  .lecture-info__head Цена:
+                  .lecture-info__text от 250 гр
+          .lecture-object__right-column
+            ul.lecture-object__tabs.lecture-tabs.tabs
+              li.lecture-tabs__item.tabs__item(rel='tab1') Інформація
+              li.lecture-tabs__item.tabs__item(rel='tab2') 
+                | відгуки (
+                span.lecture-tabs__review-count 2
+                | )
+              li.lecture-tabs__item.tabs__item.active(rel='tab3') квитки
+            .lecture-object__tabs-container.tabs-container
+              #tab1.lecture-object__tab-content.tab-content
+                .lecture-object__information.information
+                  .information__title Лекція-експеримент
+                  .information__name Дифузія. Взаємодія атомів і молекул
+                  .information__text
+                    p
+                      | Дифу́зія (лат. diffusio — поширення, розтікання, розсіювання, взаємодія) — 
+                      | процес взаємного проникнення молекул або атомів однієї речовини поміж молекул або атомів іншої, 
+                      | що зазвичай приводить до вирівнювання їх концентрацій у всьому займаному об'ємі.
+                    p 
+                      | У деяких ситуаціях одна з речовин уже має вирівняну концентрацію, і говорять про дифузію одної речовини в іншій. 
+                      | При цьому зазвичай перенесення речовини відбувається з області з високою концентрацією в область з низькою 
+                      | концентрацією (вздовж вектора градієнта концентрації).
+                    p
+                      | Прикладом дифузії може служити перемішування газів (наприклад, поширення запахів) або рідин 
+                      | (якщо у воду капнути чорнила, то рідина через деякий час стане рівномірно пофарбованою). 
+                      | Інший приклад пов'язаний з твердим тілом: атоми дотичних металів перемішуються на кордоні дотику. 
+                      | Важливу роль дифузія частинок грає у фізиці плазми.
+              #tab2.lecture-object__tab-content.tab-content
+                .lecture-object__reviews.reviews
+                  .reviews__comments
+                    .reviews__item
+                      .reviews__item-head
+                        .reviews__item-name Марія, м.Київ
+                        .reviews__item-stars Оцінка:
+                      .reviews__item-text
+                        | Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+                        | і навіть запросили провести експеримент. Дуже рада, що купила квиток
+                    .reviews__item
+                      .reviews__item-head
+                        .reviews__item-name Марія, м.Київ
+                        .reviews__item-stars Оцінка:
+                      .reviews__item-text
+                        | Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+                        | і навіть запросили провести експеримент. Дуже рада, що купила квиток
+                    .reviews__item
+                      .reviews__item-head
+                        .reviews__item-name Марія, м.Київ
+                        .reviews__item-stars Оцінка:
+                      .reviews__item-text
+                        | Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+                        | і навіть запросили провести експеримент. Дуже рада, що купила квиток
+                    .reviews__item
+                      .reviews__item-head
+                        .reviews__item-name Марія, м.Київ
+                        .reviews__item-stars Оцінка:
+                      .reviews__item-text
+                        | Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+                        | і навіть запросили провести експеримент. Дуже рада, що купила квиток
+                  form.reviews__form(action='', method='GET')
+                    .reviews__form-title ВІдвідали лекцію? Залишіть відгук
+                    input.reviews__form-input(type='text', value='', name='name', placeholder='Ім’я', required='')
+                    input.reviews__form-input(type='text', value='', name='location', placeholder='Місто', required='')
+                    textarea.reviews__form-textarea(type='', value='', name='review', placeholder='Відгук', required='')
+                    button.reviews__form-btn.btn.btn--black-transparent.btn--small(type='submit') Додати коментар
+                  
+              #tab3.lecture-object__tab-content.lecture-object__tab-content--tickets.tab-content
+                .lecture-object__tickets-item
+                  .lecture-object__tickets-text Діти до 6 років
+                  .lecture-object__tickets-price 250 грн
+                  a.lecture-object__tickets-btn.btn.btn--white(href="#") Квитки
+                .lecture-object__tickets-item
+                  .lecture-object__tickets-text Діти від 6 до 18 років
+                  .lecture-object__tickets-price 350 грн
+                  a.lecture-object__tickets-btn.btn.btn--white(href="#") Квитки
+                .lecture-object__tickets-item
+                  .lecture-object__tickets-text Дорослі
+                  .lecture-object__tickets-price 400 грн
+                  a.lecture-object__tickets-btn.btn.btn--white(href="#") Квитки
+                .lecture-object__tickets-item
+                  .lecture-object__tickets-text Студенти
+                  .lecture-object__tickets-price 400 грн
+                  a.lecture-object__tickets-btn.btn.btn--white(href="#") Квитки
+                .lecture-object__tickets-item
+                  .lecture-object__tickets-text Групи до 10 чоловік
+                  .lecture-object__tickets-price 200 грн (з особи)
+                  a.lecture-object__tickets-btn.btn.btn--white(href="#") Квитки

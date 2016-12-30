@@ -1,0 +1,275 @@
+.lecture-content {
+  padding-top: 202px;
+}
+
+.lectures {
+  //padding: 105px 0;
+  position: relative;
+
+  &:before {
+    @include half-background;
+  }
+}
+
+.lectures-item {
+  &__pic {
+    width: 426px;
+    //background-position: center center;
+    //background-size: cover;
+    //flex-basis: 426px;
+    margin-right: 55px;
+    max-width: 50%;
+    height: auto;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    width: 71%;
+    padding: 105px 0;
+  }
+  &__description {
+    width: 50%;
+  }
+  &__title {
+    margin-bottom: 36px;
+    color: #282b30;
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+  &__img {
+    width: 29%;
+    float: left;
+    min-height: 1px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 58px;
+  }
+  &__bg-img {
+    background: #8a42ce;
+  }
+}
+
+// Lecture
+.lecture {
+  position: relative;
+  padding-bottom: 90px;
+
+  &:before {
+    @include half-background;
+    min-width: 468px;
+    width: 33%;
+  }
+  &__breadcrumbs {
+    padding-top: 42px;
+  }
+  &__shows {
+    margin-top: 28px;
+  }
+  &__item {
+    padding-left: 10%;
+  }
+}
+
+.lecture-object {
+  position: relative;
+  display: flex;
+  &__left-column {
+    width: 43.5%;
+  }
+  &__right-column {
+    width: 56.5%;
+  }
+  &__pic {
+    width: 100%;
+    height: 564px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 40px rgba(27, 27, 30, 0.3);
+  }
+  &__info {
+    padding: 18px 25px;
+    background-color: #7b3fb3;
+    display: flex;
+  }
+  &__tabs {
+    margin: 50px 0 45px 70px;
+  }
+  &__tickets-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px 12px 70px;
+    margin-bottom: 2px;
+    color: #000;
+    @include transition(all 0.3s);
+    &:hover {
+      background: $accent-color;
+      color: #fff;
+
+    }
+    &:hover .lecture-object__tickets-btn {
+      visibility: visible;
+      //display: inline-block;
+    }
+  }
+  &__tickets-btn {
+    visibility: hidden;
+    //display: none;
+    margin-left: auto;
+  }
+  &__tickets-text {
+    width: 200px;
+    margin-right: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__tickets-price {
+    font-family: $button-font;
+    font-size: 1.250rem;
+    font-weight: 700;
+  }
+  &__tab-content {
+    padding-left: 70px;
+    @include transition(all 0.3s);
+    &--tickets {
+      padding-left: 0;
+    }
+  }
+  &__information {
+    padding-right: 140px;
+  }
+}
+
+.lecture-info {
+  flex: 1;
+  color: #fff;
+  &__head {
+    font-size: 1.0625rem;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 1.250rem;
+    font-family: $button-font;
+    font-weight: 700;
+    line-height: 1.2;
+    &--small {
+
+    }
+  }
+}
+
+.lecture-tabs {
+  &__item {
+    @include inlineblock(middle);
+    margin-right: 55px;
+    color: #c6c6c6;
+    font-family: $button-font;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.active {
+      color: $accent-color;
+    }
+  }
+}
+
+.reviews {
+  &__comments {
+    padding-right: 90px;
+    max-height: 340px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #d8d8d8;
+      border-radius: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $accent-color;
+      border-radius: 4px;
+    }
+  }
+  &__item {
+    margin-bottom: 26px;
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.875rem;
+      color: #000;
+      margin-bottom: 16px;
+    }
+    &-text {
+      color: #8a8a8a;
+      font-size: 0.875rem;
+    }
+  }
+  &__form {
+    margin-top: 40px;
+    &-title {
+      font-size: 0.875rem;
+      margin-bottom: 22px;
+    }
+    &-input {
+      outline: none;
+      background: transparent;
+      border: 1px solid #cfcfcf;
+      font-size: 0.875rem;
+      color: #555;
+      padding: 5px 0 5px 12px;
+      @include placeholder {
+        font-style: italic;
+        color: #9b9b9b;
+      }
+    }
+    &-textarea {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 0 0 10px;
+      border: 1px solid #cfcfcf;
+      color: #555;
+      font-size: 0.875rem;
+      outline: none;
+      resize: none;
+      @include placeholder {
+        color: #9b9b9b;
+        font-style: italic;
+      }
+    }
+    &-btn {
+      margin-top: 20px;
+    }
+  }
+}
+
+.information {
+  &__title {
+    margin-bottom: 10px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+  }
+  &__name {
+    font-size: 1.250rem;
+    text-transform: uppercase;
+  }
+  &__text {
+    margin-top: 40px;
+    color: #444;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}

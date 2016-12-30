@@ -1,0 +1,243 @@
+// -----------------------Imports-----------------------
+
+@import "./_common/_vars";
+@import "./_common/_mixins";
+@import "./_common/_fonts";
+@import "./_common/_overrides";
+@import "./_common/icons";
+@import "./sprite";
+@import "./_blocks/_header";
+@import "./_blocks/_info";
+@import "./_blocks/_lectures";
+@import "./_blocks/_news";
+@import "./_blocks/_activities";
+@import "./_blocks/_location";
+@import "./_blocks/_lessons";
+@import "./_blocks/_visit";
+@import "./_blocks/_footer";
+//@import "./sprite"; // Uncomment after the sprite generation
+
+// -----------------------Load plugins ( path to the css-file of the plugins (!rename to .SCSS before importing!) )-----------------------
+
+@import "../plugins/normalize-css/normalize";
+//@import "../plugins/foundation-sites/scss/_global";
+//@import "../plugins/foundation-sites/scss/foundation";
+@import "../plugins/owl.carousel/dist/assets/owl.carousel.min";
+
+
+// -----------------------Basic styles-----------------------
+
+html, body  { height: 100%; }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $body-color;
+  font-family: $content-font;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul, li, nav {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  padding-left: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+input {
+  border: none;
+  outline: none;
+  appearance: none !important;
+  border-radius: 0;
+}
+
+// Grid
+
+.container {
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  &:before,
+  &:after {
+    content:"";
+    display: table ;
+    clear:both;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 16.66%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+
+// -----------------------Custom Styles Here-----------------------
+
+//layout Start
+
+.body-mobile {
+  position: fixed;
+  width: 100%;
+}
+
+.wrapper-index {
+  .footer {
+    padding-top: 76px;
+  }
+}
+
+.btn {
+  border: 3px solid;
+  padding: 16px 45px;
+  @include inlineblock(middle);
+  font-family: 'Roboto Condensed';
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  @include transition(all 0.3s);
+  &--purple-transparent {
+    color: #904eca;
+    border-color: #904eca;
+    background-color: transparent;
+    &:hover {
+      color: #fff;
+      background-color: #904eca;
+    }
+  }
+  &--black-transparent {
+    color: #000;
+    border-color: #000;
+    background-color: transparent;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
+  }
+  &--small {
+    border: 1px solid;
+    padding: 12px 26px;
+    font-weight: 400;
+  }
+  &--fixed {
+    padding: 23px 0;
+    width: 215px;
+    text-align: center;
+  }
+  &--visit {
+    border: 1px solid;
+    padding: 14px 38px;
+  }
+  &--white {
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+    &:hover {
+      background-color: #fff;
+      color: #8740c8;
+    }
+  }
+  &--white-bg {
+    background: #fff;
+    color: $accent-color;
+    border-color: #fff;
+  }
+  &--activities-more {
+    padding: 16px 30px;
+    color: #010101;
+    border-color: #904eca;
+    background-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #904eca;
+    }
+  }
+  &--activities-buy {
+    color: #fff;
+    border-color: #904eca;
+    background-color: #904eca;
+    padding: 16px 23px;
+    &:hover {
+      background-color: #8334c7;
+      border-color: #8334c7;
+    }
+  }
+}
+
+.content {
+  position: relative;
+  //top: calc(50vh - 157px);
+}
+.index-content {
+  position: relative;
+  top: 50vh;
+  margin-bottom: -190px;
+}
+
+.breadcrumbs {
+  position: relative;
+  @include inlineblock(middle);
+  &__prev {
+    color: #b2b2b2;
+    transform: rotate(180deg);
+    margin-right: 16px;
+    @include inlineblock(middle);
+  }
+  &__link {
+    font-weight: 700;
+    color: #afaab4;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    @include inlineblock(middle);
+    &:after {
+      content: ' /\00a0';
+    }
+    &--current {
+      color: #fff;
+      &:after {
+        content: none;
+      }
+    }
+  }
+}
+
+
+//layout End
+
+// -----------------------Mediaqueries - Always End!-----------------------
+@import "./_common/_media";

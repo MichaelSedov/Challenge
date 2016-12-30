@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="template">
+		<meta name="keywords" content="template">
+		<meta name="author" content="Michael Sedov">
+		<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="images/favicon/manifest.json">
+		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Condensed:400,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.min.css" media="screen, projection, print">
+		<!--script(src='js/modernizr.js')-->
+		<title>Lecture</title>
+	</head>
+	<body><!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/html5shiv-printshiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();</script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com">обновите</a>его.</p>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/html5shiv-printshiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="row">
+						<div class="header__activities">
+							<div class="header__search">
+								<form action="" method="GET" class="header__search-form search-form">
+									<button class="search-form__button js-search"><i class="icon-search-icon search-form__icon"></i></button>
+									<input type="search" name="s" placeholder="Тесла шоу корпоратив" class="search-form__input">
+								</form>
+							</div>
+							<div class="header__language">
+								<ul class="header__language-list language-select">
+									<li data-lang="ua" class="language-select__item active">укр</li>
+									<li data-lang="ru" class="language-select__item">рус</li>
+									<li data-lang="en" class="language-select__item">eng</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="header__top"><a href="#" class="header__logo logo">
+								<div class="logo__pic"></div>
+								<div class="logo__description">
+									<div class="logo__description-head">Експериментаніум</div>
+									<div class="logo__description-text">Музей популярної науки і техніки</div>
+								</div></a>
+							<div class="header__menu header-menu">
+								<ul class="header-menu__list">
+									<li class="header-menu__item"><a href="#" class="header-menu__link">Головна</a></li>
+									<li class="header-menu__item"><a href="#" class="header-menu__link">Експозиция и шоу</a>
+										<ul class="header-menu__item-list">
+											<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">Шоу в музее</a></li>
+											<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">Подии и лекции</a></li>
+											<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">Выездные шоу</a></li>
+											<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">3d ТУР</a></li>
+										</ul>
+									</li>
+									<li class="header-menu__item"><a href="#" class="header-menu__link">Новини</a></li>
+									<li class="header-menu__item"><a href="#" class="header-menu__link">Освитни програми</a></li>
+									<li class="header-menu__item"><a href="#" class="header-menu__link">Организация свят</a></li>
+									<li class="header-menu__item"><a href="#" class="header-menu__link">Про нас</a></li><span class="header-menu__mobile-close"></span>
+								</ul>
+								<div class="header-menu__mobile"><span class="header-menu__mobile-icon"></span></div><a href="#" class="header-menu__tickets btn btn--purple-transparent">Квитки</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="lecture-content">
+				<div class="lecture">
+					<div class="container">
+						<div class="row">
+							<div class="lecture__breadcrumbs breadcrumbs"><a href="#" class="breadcrumbs__prev"><i class="icon-arrow-small"></i></a><a href="#" class="breadcrumbs__link">освітні програми</a><a href="#" class="breadcrumbs__link">лекції</a><a href="#" class="breadcrumbs__link breadcrumbs__link--current">Дифузія</a></div>
+						</div>
+						<div class="row">
+							<div class="lecture__shows">
+								<div class="lecture__item lecture-object">
+									<div class="lecture-object__left-column">
+										<div class="lecture-object__image-wrap">
+											<div style="background-image:url(images/lecture-item.jpg)" class="lecture-object__pic"></div>
+											<div class="lecture-object__info">
+												<div class="lecture-object__days lecture-info">
+													<div class="lecture-info__head">Коли:</div>
+													<div class="lecture-info__text">ВТ, СР, ЧТ</div>
+													<div class="lecture-info__text">12:00, 16:00</div>
+												</div>
+												<div class="lecture-object__duration lecture-info">
+													<div class="lecture-info__head">Тривалисть:</div>
+													<div class="lecture-info__text">120 хв</div>
+												</div>
+												<div class="lecture-object__price lecture-info">
+													<div class="lecture-info__head">Цена:</div>
+													<div class="lecture-info__text">от 250 гр</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="lecture-object__right-column">
+										<ul class="lecture-object__tabs lecture-tabs tabs">
+											<li rel="tab1" class="lecture-tabs__item tabs__item">Інформація</li>
+											<li rel="tab2" class="lecture-tabs__item tabs__item">
+												 
+												відгуки (<span class="lecture-tabs__review-count">2</span>)
+											</li>
+											<li rel="tab3" class="lecture-tabs__item tabs__item active">квитки</li>
+										</ul>
+										<div class="lecture-object__tabs-container tabs-container">
+											<div id="tab1" class="lecture-object__tab-content tab-content">
+												<div class="lecture-object__information information">
+													<div class="information__title">Лекція-експеримент</div>
+													<div class="information__name">Дифузія. Взаємодія атомів і молекул</div>
+													<div class="information__text">
+														<p>
+															Дифу́зія (лат. diffusio — поширення, розтікання, розсіювання, взаємодія) — 
+															процес взаємного проникнення молекул або атомів однієї речовини поміж молекул або атомів іншої, 
+															що зазвичай приводить до вирівнювання їх концентрацій у всьому займаному об'ємі.
+														</p>
+														<p>
+															 
+															У деяких ситуаціях одна з речовин уже має вирівняну концентрацію, і говорять про дифузію одної речовини в іншій. 
+															При цьому зазвичай перенесення речовини відбувається з області з високою концентрацією в область з низькою 
+															концентрацією (вздовж вектора градієнта концентрації).
+														</p>
+														<p>
+															Прикладом дифузії може служити перемішування газів (наприклад, поширення запахів) або рідин 
+															(якщо у воду капнути чорнила, то рідина через деякий час стане рівномірно пофарбованою). 
+															Інший приклад пов'язаний з твердим тілом: атоми дотичних металів перемішуються на кордоні дотику. 
+															Важливу роль дифузія частинок грає у фізиці плазми.
+														</p>
+													</div>
+												</div>
+											</div>
+											<div id="tab2" class="lecture-object__tab-content tab-content">
+												<div class="lecture-object__reviews reviews">
+													<div class="reviews__comments">
+														<div class="reviews__item">
+															<div class="reviews__item-head">
+																<div class="reviews__item-name">Марія, м.Київ</div>
+																<div class="reviews__item-stars">Оцінка:</div>
+															</div>
+															<div class="reviews__item-text">
+																Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+																і навіть запросили провести експеримент. Дуже рада, що купила квиток
+															</div>
+														</div>
+														<div class="reviews__item">
+															<div class="reviews__item-head">
+																<div class="reviews__item-name">Марія, м.Київ</div>
+																<div class="reviews__item-stars">Оцінка:</div>
+															</div>
+															<div class="reviews__item-text">
+																Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+																і навіть запросили провести експеримент. Дуже рада, що купила квиток
+															</div>
+														</div>
+														<div class="reviews__item">
+															<div class="reviews__item-head">
+																<div class="reviews__item-name">Марія, м.Київ</div>
+																<div class="reviews__item-stars">Оцінка:</div>
+															</div>
+															<div class="reviews__item-text">
+																Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+																і навіть запросили провести експеримент. Дуже рада, що купила квиток
+															</div>
+														</div>
+														<div class="reviews__item">
+															<div class="reviews__item-head">
+																<div class="reviews__item-name">Марія, м.Київ</div>
+																<div class="reviews__item-stars">Оцінка:</div>
+															</div>
+															<div class="reviews__item-text">
+																Класна лекція, прикольний і веселий професор. Все дуже детально розказали, 
+																і навіть запросили провести експеримент. Дуже рада, що купила квиток
+															</div>
+														</div>
+													</div>
+													<form action="" method="GET" class="reviews__form">
+														<div class="reviews__form-title">ВІдвідали лекцію? Залишіть відгук</div>
+														<input type="text" value="" name="name" placeholder="Ім’я" required="" class="reviews__form-input">
+														<input type="text" value="" name="location" placeholder="Місто" required="" class="reviews__form-input">
+														<textarea type="" value="" name="review" placeholder="Відгук" required="" class="reviews__form-textarea"></textarea>
+														<button type="submit" class="reviews__form-btn btn btn--black-transparent btn--small">Додати коментар</button>
+													</form>
+												</div>
+											</div>
+											<div id="tab3" class="lecture-object__tab-content lecture-object__tab-content--tickets tab-content">
+												<div class="lecture-object__tickets-item">
+													<div class="lecture-object__tickets-text">Діти до 6 років</div>
+													<div class="lecture-object__tickets-price">250 грн</div><a href="#" class="lecture-object__tickets-btn btn btn--white">Квитки</a>
+												</div>
+												<div class="lecture-object__tickets-item">
+													<div class="lecture-object__tickets-text">Діти від 6 до 18 років</div>
+													<div class="lecture-object__tickets-price">350 грн</div><a href="#" class="lecture-object__tickets-btn btn btn--white">Квитки</a>
+												</div>
+												<div class="lecture-object__tickets-item">
+													<div class="lecture-object__tickets-text">Дорослі</div>
+													<div class="lecture-object__tickets-price">400 грн</div><a href="#" class="lecture-object__tickets-btn btn btn--white">Квитки</a>
+												</div>
+												<div class="lecture-object__tickets-item">
+													<div class="lecture-object__tickets-text">Студенти</div>
+													<div class="lecture-object__tickets-price">400 грн</div><a href="#" class="lecture-object__tickets-btn btn btn--white">Квитки</a>
+												</div>
+												<div class="lecture-object__tickets-item">
+													<div class="lecture-object__tickets-text">Групи до 10 чоловік</div>
+													<div class="lecture-object__tickets-price">200 грн (з особи)</div><a href="#" class="lecture-object__tickets-btn btn btn--white">Квитки</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="lecture__visit visit">
+				<div itemscope="" itemtype="http://schema.org/Organization" class="visit__address address">
+					<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="address__item address-item address-item--visit">
+						<p class="address-item__head address-item__head--small">Чекаємо вас за адресою:</p>
+						<p itemprop="streetAddress" class="address-item__text address-item__text--bold address-item__text--small">м. Київ, вул. Верхній Вал 2А</p>
+					</div>
+					<div class="address__item address-item address-item--visit">
+						<p class="address-item__head address-item__head--small">Графік роботи музею:</p>
+						<p class="address-item__text address-item__text--small">пн-вихідний<br>вт-пт: 09:30 - 19:00<br>сб-нд, свята: 10:00 - 20:00</p>
+					</div>
+					<div class="address__item address-item address-item--visit">
+						<p class="address-item__head address-item__head--small">Контакти</p>
+						<div class="address-item__text address-item__text--small"><a href="tel:+38 (044) 425-65-81" itemprop="telephone" class="address-item__telephone">+38 (044) 425-65-81, </a><a href="tel:+38 (096) 477-97-91" itemprop="telephone" class="address-item__telephone">+38 (096) 477-97-91, </a><a href="tel:+38 (099) 256-71-27" itemprop="telephone" class="address-item__telephone">+38 (099) 256-71-27</a></div>
+						<p itemprop="email" class="address-item__text address-item__text--email address-item__text--small">enjoy@experimentanium.com.ua</p>
+					</div>
+				</div>
+				<div style="background-image:url(images/visit-map.png)" class="visit__map"></div>
+				<div class="visit__form">
+					<form action="" method="GET" class="visit__form-content">
+						<div class="visit__form-title">Запланувати візит</div>
+						<input type="date" value="" name="date" placeholder="Дата" required="" class="visit__form-input visit__form-input--date">
+						<div class="visit__form-group">
+							<input type="time" value="" name="time" placeholder="Время" required="" class="visit__form-input">
+							<input type="" value="" name="review" placeholder="Кількість білетів" required="" class="visit__form-input">
+						</div>
+						<button type="submit" class="visit__form-btn btn btn--white btn--visit">Забронювати        </button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrap">
+					<div class="footer__contacts footer-contacts">
+						<div class="footer-contacts__logo"><a href="#" class="logo logo--footer">
+								<div class="logo__pic logo__pic--footer"></div>
+								<div class="logo__description">
+									<div class="logo__description-head logo__description-head--footer">Експериментаніум</div>
+									<div class="logo__description-text logo__description-text--footer">Музей популярної науки і техніки</div>
+								</div></a></div>
+						<div class="footer-contacts__subscribe footer-subscribe"> 
+							<form action="" method="GET" class="footer-subscribe__form subscribe-form">
+								<label for="email" class="subscribe-form__label">Підписатись на новини</label>
+								<input type="email" value="" name="email" placeholder="Введіть е-mail" required="" class="subscribe-form__input">
+								<button class="subscribe-form__submit"><i class="subscribe-form__icon icon-letter-icon"></i></button>
+							</form>
+						</div>
+						<div class="footer-contacts__social footer-social">
+							<div class="footer-social__text">МИ в соціальних мережах</div>
+							<ul class="footer-social__list social-list">
+								<li class="social-list__item"><a href="#" class="social-list__link"><i class="icon-facebook"></i></a></li>
+								<li class="social-list__item"><a href="#" class="social-list__link"><i class="social-list__icon icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__categories footer-categories">
+						<div class="footer-categories__row">
+							<div class="footer-categories__column category-item">
+								<div class="category-item__head">Експозиція та шоу</div>
+								<ul class="category-item__subcategories subcategories-list">
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Шоу в музеи</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Експозиція музею</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Виїздні шоу</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">3Д тур </a></li>
+								</ul>
+							</div>
+							<div class="footer-categories__column category-item">
+								<div class="category-item__head">Новини</div>
+								<ul class="category-item__subcategories subcategories-list">
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини музею</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини зі світу науки</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Анонси</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Акції</a></li>
+								</ul>
+							</div>
+							<div class="footer-categories__column category-item">
+								<div class="category-item__head">освітні програми</div>
+								<ul class="category-item__subcategories subcategories-list">
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Шоу в музеи</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Експозиція музею</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Виїздні шоу</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">3Д тур </a></li>
+								</ul>
+							</div>
+							<div class="footer-categories__column category-item">
+								<div class="category-item__head">організація заходів</div>
+								<ul class="category-item__subcategories subcategories-list">
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини музею</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини зі світу науки</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Анонси</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Акції</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-categories__row">
+							<div class="footer-categories__column category-item">
+								<div class="category-item__head">освітні програми</div>
+								<ul class="category-item__subcategories subcategories-list">
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Шоу в музеи</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Експозиція музею</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Виїздні шоу</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">3Д тур </a></li>
+								</ul>
+							</div>
+							<div class="footer-categories__column category-item">
+								<div class="category-item__head">організація заходів</div>
+								<ul class="category-item__subcategories subcategories-list">
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини музею</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини зі світу науки</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Анонси</a></li>
+									<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Акції</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/plugins.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

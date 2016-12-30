@@ -1,0 +1,78 @@
+.lessons-content {
+  padding-top: 202px;
+}
+.lessons {
+  position: relative;
+  padding-bottom: 115px;
+  min-height: 100vh;
+  &:before {
+    @include half-background;
+    min-width: 468px;
+    width: 33%;
+  }
+  &__breadcrumbs {
+    margin-top: 45px;
+  }
+  &__content {
+    padding: 0 4% 0 10%;
+    margin-top: 90px;
+  }
+  &__item {
+    margin-bottom: 55px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.lessons-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
+  &__info {
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 25px;
+    background-color: $accent-color;
+    min-height: 460px;
+    color: #fff;
+    box-shadow: 0 0 40px rgba(27, 27, 30, 0.3);
+    overflow: hidden;
+  }
+  &__pic {
+    width: 50%;
+    height: 315px;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  &__subtitle {
+    text-shadow: 1px 1.7px 38px rgba(27, 27, 30, 0.75);
+    font-size: 1.125rem;
+  }
+  &__title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1.7px 38px rgba(27, 27, 30, 0.75);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  &__btn-wrap {
+    margin-top: 50px;
+  }
+  &__time {
+    margin-top: 65px;
+  }
+  &__time, &__price {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,129 @@
+.footer {
+  background: $accent-color;
+  min-height: 100px;
+  padding-top: 50px;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__contacts {
+    width: 42.5%;
+  }
+  &__categories {
+    padding-top: 20px;
+    width: 57.5%;
+  }
+}
+
+.footer-contacts {
+  &__subscribe,
+  &__social {
+    margin-top: 68px;
+  }
+}
+
+.subscribe-form {
+  position: relative;
+  width: 230px;
+  &__label {
+    display: block;
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__input {
+    width: 100%;
+    padding: 0 0 3px 0;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    font-size: 0.875rem;
+    @include transition(all 0.3s);
+    @include placeholder {
+      font-family: $text-font;
+      color: #fff;
+      font-weight:300;
+      font-size: 0.8125rem;
+      padding-left: 20px;
+    }
+  }
+  &__submit {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 6px;
+    color: #fff;
+    font-size: 0.8125rem;
+  }
+}
+
+.footer-social {
+  &__text {
+    margin-bottom: 20px;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}
+
+.social-list {
+  &__item {
+    @include inlineblock(middle);
+    margin-right: 28px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+.category-item {
+  &__head {
+    margin-bottom: 13px;
+    font-family: $text-font;
+    font-size: 0.8125rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.2;
+    min-height: 32px;
+    text-transform: uppercase;
+  }
+}
+
+.footer-categories {
+  &__row {
+    display: flex;
+    margin-bottom: 45px;
+  }
+
+  &__column {
+    width: 24%;
+    margin: 0 0.5%;
+    //margin: 0 0.5%;
+    float: left;
+  }
+}
+
+.subcategories-list {
+  &__link {
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 0.8125rem;
+    font-weight: 300;
+    &:hover {
+      color: #eee;
+    }
+  }
+  &__item {
+    margin: 2px 0;
+  }
+}

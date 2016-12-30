@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="template">
+		<meta name="keywords" content="template">
+		<meta name="author" content="Michael Sedov">
+		<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="images/favicon/manifest.json">
+		<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Roboto+Condensed:400,700|Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/main.min.css" media="screen, projection, print">
+		<!--script(src='js/modernizr.js')-->
+		<title>Template</title>
+	</head>
+	<body><!--[if lt IE 9]>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/html5shiv-printshiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script type="text/javascript">jQuery('input[placeholder], textarea[placeholder]').placeholder();</script>
+		<![endif]-->
+		<!--[if lt IE 8]>
+		<p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com">обновите</a>его.</p>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/es5-shim.min.js"></script>
+		<script src="js/html5shiv.min.js"></script>
+		<script src="js/html5shiv-printshiv.min.js"></script>
+		<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<div class="wrapper-index">
+			<div class="main">
+				<header class="header">
+					<div class="container">
+						<div class="row">
+							<div class="header__activities">
+								<div class="header__search">
+									<form action="" method="GET" class="header__search-form search-form">
+										<button class="search-form__button js-search"><i class="icon-search-icon search-form__icon"></i></button>
+										<input type="search" name="s" placeholder="Тесла шоу корпоратив" class="search-form__input">
+									</form>
+								</div>
+								<div class="header__language">
+									<ul class="header__language-list language-select">
+										<li data-lang="ua" class="language-select__item active">укр</li>
+										<li data-lang="ru" class="language-select__item">рус</li>
+										<li data-lang="en" class="language-select__item">eng</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="header__top"><a href="#" class="header__logo logo">
+									<div class="logo__pic"></div>
+									<div class="logo__description">
+										<div class="logo__description-head">Експериментаніум</div>
+										<div class="logo__description-text">Музей популярної науки і техніки</div>
+									</div></a>
+								<div class="header__menu header-menu">
+									<ul class="header-menu__list">
+										<li class="header-menu__item"><a href="#" class="header-menu__link">Головна</a></li>
+										<li class="header-menu__item"><a href="#" class="header-menu__link">Експозиция и шоу</a>
+											<ul class="header-menu__item-list">
+												<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">Шоу в музее</a></li>
+												<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">Подии и лекции</a></li>
+												<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">Выездные шоу</a></li>
+												<li class="header-menu__item header-menu__item--dropdown"><a href="#" class="header-menu__link header-menu__link--dropdown">3d ТУР</a></li>
+											</ul>
+										</li>
+										<li class="header-menu__item"><a href="#" class="header-menu__link">Новини</a></li>
+										<li class="header-menu__item"><a href="#" class="header-menu__link">Освитни програми</a></li>
+										<li class="header-menu__item"><a href="#" class="header-menu__link">Организация свят</a></li>
+										<li class="header-menu__item"><a href="#" class="header-menu__link">Про нас</a></li><span class="header-menu__mobile-close"></span>
+									</ul>
+									<div class="header-menu__mobile"><span class="header-menu__mobile-icon"></span></div><a href="#" class="header-menu__tickets btn btn--purple-transparent">Квитки</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+				<div id="js-carousel-main" class="main__slider owl-carousel owl-theme">
+					<div class="main__slider-item">
+						<div style="background-image:url(images/back-main.jpg)" class="main__slider-img"></div>
+						<div class="main__slider-content">
+							<div class="container">
+								<div class="main__slider-date"><span class="main__slider-date-big">12</span>\09\2016</div>
+								<div class="main__slider-subtitle">Лекція-експеримент</div>
+								<div class="main__slider-title">ДИФУЗІЯ. ВЗАЄМОДІЯ МОЛЕКУЛ ТА АТОМІВ У ПРИРОДІ.</div>
+								<div class="main__slider-buttons"><a href="#" class="main__slider-info btn btn--white btn--fixed">детальніше</a><a href="#" class="main__slider-tickets btn btn--white-bg btn--fixed">придбати квитки</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="main__slider-item">
+						<div style="background-image:url(images/main-slider.jpg)" class="main__slider-img"></div>
+						<div class="main__slider-content">
+							<div class="container">
+								<div class="main__slider-date"><span class="main__slider-date-big">12</span>\09\2016</div>
+								<div class="main__slider-subtitle">Лекція-експеримент</div>
+								<div class="main__slider-title">Эпизод 4. Сткрытая угроза</div>
+								<div class="main__slider-buttons"><a href="#" class="main__slider-info btn btn--white btn--fixed">детальніше</a><a href="#" class="main__slider-tickets btn btn--white-bg btn--fixed">придбати квитки</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-content"> 
+				<section class="info">
+					<div class="container">
+						<div class="info__block info-item color-box color-box--info color-box--transparent"></div><a href="#" class="info__block info-item color-box color-box--info color-box--purple"><i class="info-item__pic info-item__pic--voice icon-voice-icon"></i>
+							<div class="info-item__head">Акции та знижки</div>
+							<div id="js-carousel-info" class="info-item__slides info-slider owl-carousel owl-theme">
+								<div class="info-slider__item info-item-slider">
+									<div class="info-item-slider__head">Активним відвідувачам дитячого табору - знижка!</div>
+									<div class="info-item-slider__text">При оплаті 5 днів перебування в дитячому таборі «Літні канікули в музеї» - знижка!</div>
+								</div>
+								<div class="info-slider__item info-item-slider">
+									<div class="info-item-slider__head">Активним відвідувачам дитячого табору - знижка!</div>
+									<div class="info-item-slider__text">При оплаті 5 днів перебування в дитячому таборі «Літні канікули в музеї» - знижка!</div>
+								</div>
+								<div class="info-slider__item info-item-slider">
+									<div class="info-item-slider__head">Активним відвідувачам дитячого табору - знижка!</div>
+									<div class="info-item-slider__text">При оплаті 5 днів перебування в дитячому таборі «Літні канікули в музеї» - знижка!</div>
+								</div>
+							</div></a><a href="#" class="info__block info-item color-box color-box--info color-box--purple color-box--info-shadow"><i class="info-item__pic info-item__pic--3d icon-camera-icon"></i>
+							<div class="info-item__head">
+								 
+								3d тур <br>експериментаниумом
+							</div>
+							<div class="info-item__text">
+								 
+								Уникальна мождливисть подивитись експозицию,<br>не виходичи з дому
+							</div></a><a href="#" class="info__block info-item color-box color-box--info color-box--green color-box--info-shadow"><i class="info-item__pic info-item__pic--tickets icon-tickets-icon"></i>
+							<div class="info-item__head">
+								 
+								Квитки, <br>график роботы музею
+							</div>
+							<div class="info-item__text">інформаця про розклад роботи, ціни та види квитків, <br>доступні знижки та акції</div></a>
+					</div>
+				</section>
+				<section class="news">
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
+								<div id="js-carousel-news" class="news__slider-wrap news-slider owl-carousel owl-theme">
+									<div class="news-slider__item">
+										<div class="news-slider__date">14/04/16</div>
+										<div class="news-slider__text">
+											Музей 
+											«Експериментаніум» побував на допрем'єрному показі мультфільму "Норм та Незламні"
+										</div>
+										<div class="news-slider__hover news-item-hover"><a href="#" class="news-item-hover__more btn btn--white btn--fixed">Детальнише</a></div>
+									</div>
+									<div class="news-slider__item">
+										<div class="news-slider__date">14/04/16</div>
+										<div class="news-slider__text">
+											Музей 
+											«Експериментаніум» побував на допрем'єрному показі мультфільму "Норм та Незламні"
+										</div>
+										<div class="news-slider__hover news-item-hover"><a href="#" class="news-item-hover__more btn btn--white btn--fixed">Детальнише</a></div>
+									</div>
+									<div class="news-slider__item">
+										<div class="news-slider__date">14/04/16</div>
+										<div class="news-slider__text">
+											Музей 
+											«Експериментаніум» побував на допрем'єрному показі мультфільму "Норм та Незламні"
+										</div>
+										<div class="news-slider__hover news-item-hover"><a href="#" class="news-item-hover__more btn btn--white btn--fixed">Детальнише</a></div>
+									</div>
+									<div class="news-slider__item">
+										<div class="news-slider__date">14/04/16</div>
+										<div class="news-slider__text">
+											Музей 
+											«Експериментаніум» побував на допрем'єрному показі мультфільму "Норм та Незламні"
+										</div>
+										<div class="news-slider__hover news-item-hover"><a href="#" class="news-item-hover__more btn btn--white btn--fixed">Детальнише</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="activities">
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
+								<div class="activities__row">
+									<div class="activities__block activities-item color-box color-box--activities color-box--shadow-in">
+										<div style="background-image:url(images/activities-party.jpg)" class="activities-item__img"></div>
+									</div><a href="#" class="activities__block activities-item color-box color-box--activities color-box--green color-box--shadow-in"><i class="activities-item__pic activities-item__pic--cake icon-cake-icon"></i>
+										<div class="activities-item__head">святкуйте День народження <br>в музеї!</div>
+										<div class="activities-item__text">Хочете влаштувати своїй дитині по-справжньому незабутнє свято?  Тоді послуга саме для вас.</div></a>
+								</div>
+								<div class="activities__row activities__row--reverse"><a href="#" class="activities__block activities-item color-box color-box--activities color-box--orange"><i class="activities-item__pic activities-item__pic--lab icon-lab-icon"></i>
+										<div class="activities-item__head">«цікава хімія з волтером вайтом»</div>
+										<div class="activities-item__text">Ваша дитина полюбляє «похімічити» вдома? Приводьте її до нас, на заняття гуртка «Цікава хімія»! </div></a>
+									<div class="activities__block activities-item color-box color-box--activities color-box--shadow">
+										<div style="background-image:url(images/activities-party-two.jpg)" class="activities-item__img"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="lectures">
+					<div class="container">
+						<div class="row">
+							<div class="col-6">
+								<div id="js-carousel-lectures" class="lectures__list lectures-list owl-carousel owl-theme">
+									<div class="lectures-list__item lectures-item">
+										<div class="lectures-item__img"><img src="images/index.png" class="lectures-item__bg-img"></div>
+										<div class="lectures-item__info"><img src="images/lectures-tesla-info.jpg" class="lectures-item__pic">
+											<div class="lectures-item__description">
+												<div class="lectures-item__title">ТРАНСФОРМАТОР ТЕСЛА</div>
+												<div class="lectures-item__text">
+													 
+													Пристрій, винайдений Ніколою Теслою, що носить його ім'я і виконаний у вигляді трансформатора, 
+													ввімкнутого обмотками в коливальні контури, які працюють в резонансному режимі
+													та служить для утворення високої електричної напруги (десятки кіловольт) високої частоти (зазвичай, 20...100 кГц). 
+													Прилад було запатентовано 22 вересня 1896 року, як «Апарат для вироблення електричних струмів високої частоти і потенціалу»
+												</div>
+												<div class="lectures-item__buttons"><a href="#" class="lectures-item__more-btn btn btn--activities-more">читати далі</a><a href="#" class="lectures-item__buy-btn btn btn--activities-buy">придбати квитки на шоу</a></div>
+											</div>
+										</div>
+									</div>
+									<div class="lectures-list__item lectures-item">
+										<div class="lectures-item__img"><img src="images/index.png" class="lectures-item__bg-img"></div>
+										<div class="lectures-item__info"><img src="images/lectures-tesla-info.jpg" class="lectures-item__pic">
+											<div class="lectures-item__description">
+												<div class="lectures-item__title">ТРАНСФОРМАТОР ТЕСЛА</div>
+												<div class="lectures-item__text">
+													 
+													Пристрій, винайдений Ніколою Теслою, що носить його ім'я і виконаний у вигляді трансформатора, 
+													ввімкнутого обмотками в коливальні контури, які працюють в резонансному режимі
+													та служить для утворення високої електричної напруги (десятки кіловольт) високої частоти (зазвичай, 20...100 кГц). 
+													Прилад було запатентовано 22 вересня 1896 року, як «Апарат для вироблення електричних струмів високої частоти і потенціалу»
+												</div>
+												<div class="lectures-item__buttons"><a href="#" class="lectures-item__more-btn btn btn--activities-more">читати далі</a><a href="#" class="lectures-item__buy-btn btn btn--activities-buy">придбати квитки на шоу</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="location">
+					<div class="container">
+						<div class="location__content">
+							<div itemscope="" itemtype="http://schema.org/Organization" class="location__address address">
+								<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress" class="address__item address__item--street address-item">
+									<p class="address-item__head">Чекаємо вас за адресою:</p>
+									<p itemprop="streetAddress" class="address-item__text address-item__text--bold">м. Київ, вул. Верхній Вал 2А</p>
+								</div>
+								<div class="address__item address__item--street address-item">
+									<p class="address-item__head">Графік роботи музею:</p>
+									<p class="address-item__text">
+										 
+										пн-вихідний<br>вт-пт: 09:30 - 19:00<br>сб-нд, свята: 10:00 - 20:00
+									</p>
+								</div>
+								<div class="address__item address__item--contacts address-item">
+									<p class="address-item__head">Контакти</p>
+									<div class="address-item__text"><a href="tel:+38 (044) 425-65-81" itemprop="telephone" class="address-item__telephone">+38 (044) 425-65-81, </a><a href="tel:+38 (096) 477-97-91" itemprop="telephone" class="address-item__telephone">+38 (096) 477-97-91, </a><a href="tel:+38 (099) 256-71-27" itemprop="telephone" class="address-item__telephone">+38 (099) 256-71-27</a></div>
+									<p itemprop="email" class="address-item__text address-item__text--email">enjoy@experimentanium.com.ua</p>
+								</div>
+							</div>
+							<div class="location__media media-content">
+								<div class="media-content__shops"><a href="#" class="media-content__coffee media-content__item"><i class="media-content__coffee-pic media-content__item-pic icon-coffee-icon"></i>
+										<div class="media-content__coffee-text media-content__item-text">кафетерій</div></a><a href="#" class="media-content__shop media-content__item"><i class="media-content__shop-pic media-content__item-pic icon-shop-icon"></i>
+										<div class="media-content__shop-text media-content__item-text">магазин</div></a></div>
+								<div class="media-content__info">
+									<div class="media-content__map media-content__item"></div><a href="#" class="media-content__science media-content__item"><i class="media-content__science-pic media-content__item-pic icon-science-icon"></i>
+										<div class="media-content__science-text media-content__item-text">Освітній портал</div></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<footer class="footer">
+					<div class="container">
+						<div class="footer__wrap">
+							<div class="footer__contacts footer-contacts">
+								<div class="footer-contacts__logo"><a href="#" class="logo logo--footer">
+										<div class="logo__pic logo__pic--footer"></div>
+										<div class="logo__description">
+											<div class="logo__description-head logo__description-head--footer">Експериментаніум</div>
+											<div class="logo__description-text logo__description-text--footer">Музей популярної науки і техніки</div>
+										</div></a></div>
+								<div class="footer-contacts__subscribe footer-subscribe"> 
+									<form action="" method="GET" class="footer-subscribe__form subscribe-form">
+										<label for="email" class="subscribe-form__label">Підписатись на новини</label>
+										<input type="email" value="" name="email" placeholder="Введіть е-mail" required="" class="subscribe-form__input">
+										<button class="subscribe-form__submit"><i class="subscribe-form__icon icon-letter-icon"></i></button>
+									</form>
+								</div>
+								<div class="footer-contacts__social footer-social">
+									<div class="footer-social__text">МИ в соціальних мережах</div>
+									<ul class="footer-social__list social-list">
+										<li class="social-list__item"><a href="#" class="social-list__link"><i class="icon-facebook"></i></a></li>
+										<li class="social-list__item"><a href="#" class="social-list__link"><i class="social-list__icon icon-twitter"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer__categories footer-categories">
+								<div class="footer-categories__row">
+									<div class="footer-categories__column category-item">
+										<div class="category-item__head">Експозиція та шоу</div>
+										<ul class="category-item__subcategories subcategories-list">
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Шоу в музеи</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Експозиція музею</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Виїздні шоу</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">3Д тур </a></li>
+										</ul>
+									</div>
+									<div class="footer-categories__column category-item">
+										<div class="category-item__head">Новини</div>
+										<ul class="category-item__subcategories subcategories-list">
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини музею</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини зі світу науки</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Анонси</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Акції</a></li>
+										</ul>
+									</div>
+									<div class="footer-categories__column category-item">
+										<div class="category-item__head">освітні програми</div>
+										<ul class="category-item__subcategories subcategories-list">
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Шоу в музеи</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Експозиція музею</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Виїздні шоу</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">3Д тур </a></li>
+										</ul>
+									</div>
+									<div class="footer-categories__column category-item">
+										<div class="category-item__head">організація заходів</div>
+										<ul class="category-item__subcategories subcategories-list">
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини музею</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини зі світу науки</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Анонси</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Акції</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer-categories__row">
+									<div class="footer-categories__column category-item">
+										<div class="category-item__head">освітні програми</div>
+										<ul class="category-item__subcategories subcategories-list">
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Шоу в музеи</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Експозиція музею</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Виїздні шоу</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">3Д тур </a></li>
+										</ul>
+									</div>
+									<div class="footer-categories__column category-item">
+										<div class="category-item__head">організація заходів</div>
+										<ul class="category-item__subcategories subcategories-list">
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини музею</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Новини зі світу науки</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Анонси</a></li>
+											<li class="subcategories-list__item"><a href="#" class="subcategories-list__link">Акції</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+		<script src="js/plugins.min.js"></script>
+		<script src="js/main.min.js"></script>
+	</body>
+</html>

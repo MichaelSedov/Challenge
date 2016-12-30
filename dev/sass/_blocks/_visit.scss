@@ -1,0 +1,57 @@
+.visit {
+  min-height: 360px;
+  height: 360px;
+  display: flex;
+  &__address {
+    background: $accent-color;
+    flex: 1.5;
+    justify-content: flex-end;
+  }
+  &__map {
+    min-height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 3;
+  }
+  &__form {
+    @include flex-center;
+    background-color: $accent-color-third;
+    flex: 2.5;
+    &-content {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &-title {
+      margin-bottom: 24px;
+      color: #fff;
+      font-family: $button-font;
+      font-size: 1.125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    &-input {
+      width: 48.5%;
+      height: 45px;
+      padding-left: 21px;
+      border: 1px solid #afafaf;
+      font-size: 0.875rem;
+      @include placeholder {
+        font-style: italic;
+        color: #9b9b9b;
+      }
+      &--date {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  &__form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  &__form-btn {
+    margin-top: 20px;
+  }
+}

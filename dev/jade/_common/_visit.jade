@@ -1,0 +1,32 @@
+.lecture__visit.visit
+  .visit__address.address(itemscope='', itemtype='http://schema.org/Organization')
+    .address__item.address-item.address-item--visit(itemprop='address', itemscope='', itemtype='http://schema.org/PostalAddress')
+      p.address-item__head.address-item__head--small Чекаємо вас за адресою:
+      p.address-item__text.address-item__text--bold.address-item__text--small(itemprop='streetAddress') м. Київ, вул. Верхній Вал 2А
+    .address__item.address-item.address-item--visit
+      p.address-item__head.address-item__head--small Графік роботи музею:
+      p.address-item__text.address-item__text--small
+       | пн-вихідний
+       br
+       | вт-пт: 09:30 - 19:00
+       br 
+       | сб-нд, свята: 10:00 - 20:00
+    .address__item.address-item.address-item--visit
+      p.address-item__head.address-item__head--small Контакти
+      .address-item__text.address-item__text--small
+        a(href="tel:+38 (044) 425-65-81").address-item__telephone(itemprop='telephone')
+          | +38 (044) 425-65-81, 
+        a(href="tel:+38 (096) 477-97-91").address-item__telephone(itemprop='telephone')
+          | +38 (096) 477-97-91, 
+        a(href="tel:+38 (099) 256-71-27").address-item__telephone(itemprop='telephone')
+          | +38 (099) 256-71-27
+      p.address-item__text.address-item__text--email.address-item__text--small(itemprop='email') enjoy@experimentanium.com.ua
+  .visit__map(style="background-image:url(images/visit-map.png)")
+  .visit__form
+    form.visit__form-content(action='', method='GET')
+      .visit__form-title Запланувати візит
+      input.visit__form-input.visit__form-input--date(type='date', value='', name='date', placeholder='Дата', required='')
+      .visit__form-group
+        input.visit__form-input(type='time', value='', name='time', placeholder='Время', required='')
+        input.visit__form-input(type='', value='', name='review', placeholder='Кількість білетів', required='')
+      button.visit__form-btn.btn.btn--white.btn--visit(type='submit') Забронювати        
